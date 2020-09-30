@@ -64,6 +64,11 @@ function App() {
               </div>
           </div>
 
+          <p style={{fontSize: 24,
+              color: "#38CCF5",
+              marginLeft: 427,
+              marginBottom: -90
+          }}>Our Offer: Intelligent Automation. Real-time Insights. Unparalleled Results.</p>
 
           <img src={group} style={{width:'100%'}} />
           <div style={{width:'100%', flexDirection:'row', display: "flex"}}>
@@ -74,7 +79,12 @@ function App() {
               }}>
                 <h2 style={{fontSize: 34}}>The Benefits of using Filed</h2>
               </div>
-              <div style={{flex:1}}>
+              <div style={{flex:1,
+                  display:"flex",
+                  alignItems:'left',
+                  flexDirection:'column',
+                  justifyContent: 'center'
+              }}>
                   <div style={{display:"flex", flexDirection:"row"}}>
                       <img src={check}/>
                       <p>Ability to scale using Dexter, our AI-powered marketing genius.</p>
@@ -129,7 +139,7 @@ function App() {
                        marginBottom: 55
                    }}>
                         <img src={avatar} style={{width:109, height:109}}/>
-                       <p style={{
+                        <p style={{
                            color:"white",
                            marginLeft: 29,
                            textAlign:'left',
