@@ -1,13 +1,17 @@
 import React, { useState} from 'react';
+import orangeCicles from "../img/Repeat Grid 2.png";
 
 const FormComponent = (props) => {
     const [checked, setChecked] = useState(false);
     return(
          <div style={{...props.style}}>
-             <p style={{textAlign:'center',
+             <div style={{marginLeft:500}}>
+                 <img src={orangeCicles}/>
+             </div>
+             <h3 style={{textAlign:'center',
                      fontSize:34,
                      fontFamily:'Roboto serif'
-             }}>Let's start</p>
+             }}>Let's start</h3>
              <div style={{textAlign:'center'}}>
                  <p>Fill out the form and we'll get in touch to get your trial set up.</p>
              </div>
@@ -50,7 +54,6 @@ const FormComponent = (props) => {
 
                  }}>GET STARTED</button>
              </div>
-
          </div>
     );
 }
