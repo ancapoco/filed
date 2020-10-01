@@ -14,31 +14,22 @@ import bigCircle from './img/Ellipse 11.svg';
 import mediumCircle from './img/Ellipse 10.svg';
 import smallCircle from './img/Ellipse 9.svg';
 
+
 function App() {
+
   return (
       <div>
           <div style={{marginLeft: 158}}>
               <div style={{flex:1, display: "flex", flexDirection: "row"}}>
                   <div style={{flex: 1}}>
-                      <div style={{marginTop: 130,
-                                  left: 174,
-                          width: 158,
-                          height: 54,
-                          backgroundImage: './img/filed-logo-01.png'}}>
+                      <div style={logoStyle}>
                           <img src={logo} alt="Logo" />
                       </div>
-                      <div style={{marginTop: 80,
-                                    width: 568,
-                                    textAlign: 'left'}}>
-                          <p style={{fontSize: "44px",
-                              fontFamily: "Roboto, sans-serif",
-                              lineHeight: "66px",
-                              fontWeight: 540
-                          }}>
-                              Book a demo today and get two weeks for {'\t'}
-                              <font color='#38CCF5'>
+                      <div style={{marginTop: 80, width: 568, textAlign: 'left'}}>
+                          <p style={text1}>Book a demo today and get two weeks for {'\t'}
+                              <span style={{color:'#38CCF5'}} >
                                free
-                              </font>
+                              </span>
                               . Why?
                           </p>
                       </div>
@@ -119,9 +110,9 @@ function App() {
                     fontWeight: 550,
                     lineHeight: "43px",
                 }}>The  {'\t'}
-                    <font color={'#38CCF5'}>
+                    <span style={{color:'#38CCF5'}}>
                      Benefits
-                    </font>
+                    </span>
                     {'\t'} of using Filed</p>
               </div>
               <div style={{flex:1,
@@ -359,64 +350,23 @@ function App() {
           }}>
               <div style={{flex:3,
               }}>
-                <p style={{
-                    color:"white",
-                    fontFamily: "Roboto, sans-serif",
-                    fontSize: "18px",
-                    fontWeight:500,
-                    lineHeight: "22px",
-                    marginLeft: 160
-                    }}>
+                <p style={footerText}>
                     Copyright © 2020. All Rights Reserved.
                 </p>
               </div>
-                  <button style={{flex:1,
-                      border: "none",
-                      color:"white",
-                      backgroundColor:"transparent",
-                      fontSize: "18px",
-                      fontFamily: "Roboto, sans-serif",
-                      lineHeight: "22px",
-                      marginLeft: 400
-                  }}>
+                  <button style={footerButton}>
                       HOME
                   </button>
-                  <button style={{
-                      flex:1,
-                      border: "none",
-                      color:"white",
-                      backgroundColor:"transparent",
-                      fontSize: "18px",
-                      fontFamily: "Roboto, sans-serif",
-                      lineHeight: "22px",
-                      marginLeft:10
-                  }}>
+                  <button style={footerButton}>
                       FEATURES
                   </button >
-                  <button style={{
-                      flex:1,
-                      border: "none",
-                      color:"white",
-                      backgroundColor:"transparent",
-                      fontSize: "18px",
-                      fontFamily: "Roboto, sans-serif",
-                      lineHeight: "22px",}}>
+                  <button style={footerButton}>
                       TERMS
                   </button>
-                  <button style={{flex:1,border: "none",
-                      color:"white",
-                      backgroundColor:"transparent",
-                      fontSize: "18px",
-                      fontFamily: "Roboto, sans-serif",
-                      lineHeight: "22px",}}>
+                  <button style={footerButton}>
                       PRIVACY
                   </button>
-                  <button style={{flex:1,border: "none",
-                      color:"white",
-                      backgroundColor:"transparent",
-                      fontSize: "18px",
-                      fontFamily: "Roboto, sans-serif",
-                      lineHeight: "22px",}}>
+                  <button style={footerButton}>
                       CONTACT US
                   </button>
               <div style={{flex:1, marginRight: 140}}>
@@ -430,6 +380,36 @@ function App() {
       </div>
 
   );
+}
+const footerButton = {
+    flex:1,
+    border: "none",
+    color:"white",
+    backgroundColor:"transparent",
+    fontSize: "18px",
+    fontFamily: "Roboto, sans-serif",
+    lineHeight: "22px",
+}
+const footerText = {
+    color:"white",
+    fontFamily: "Roboto, sans-serif",
+    fontSize: "18px",
+    fontWeight:500,
+    lineHeight: "22px",
+    marginLeft: 160
+}
+const logoStyle = {
+    marginTop: 130,
+    left: 174,
+    width: 158,
+    height: 54,
+    backgroundImage: './img/filed-logo-01.png'}
+
+const text1 ={
+    fontSize: "44px",
+    fontFamily: "Roboto, sans-serif",
+    lineHeight: "66px",
+    fontWeight: 540
 }
 
 export default App;

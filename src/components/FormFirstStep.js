@@ -4,7 +4,8 @@ import orangeCicle from "../img/Repeat Grid 2.png";
 const FormFirstStep = (props) => {
 
     return(
-        <div style={{...props.style}}>
+        <div style={{...props.style,boxShadow: '0px 4px 20px #00000029',
+            borderRadius: 30,}}>
             <br/>
             <br/>
             <br/>

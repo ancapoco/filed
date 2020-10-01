@@ -16,9 +16,15 @@ const FormSecondStep = (props) => {
                 <br/>
                 <br/>
             <h3 style={{
-                fontSize: 34,
+                fontSize: "34px",
+                lineHeight: "41px",
                 textAlign:'center',
-                fontFamily: 'Roboto, sans-serif'
+                fontFamily: 'Roboto, sans-serif',
+                fontWeight: 700,
+                width: 533,
+                height: 83,
+                marginLeft:65
+
             }}>
                 We’ll be in touch to get your trial set up.
             </h3>
