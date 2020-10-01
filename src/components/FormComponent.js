@@ -1,61 +1,16 @@
-import React, { useState} from 'react';
-import orangeCicles from "../img/Repeat Grid 2.png";
+import React, {useState} from 'react';
+import orangeCicle from "../img/Repeat Grid 2.png";
+import FormFirstStep from "./FormFirstStep";
+import FormSecondStep from "./FormSecondStep";
 
 const FormComponent = (props) => {
-    const [checked, setChecked] = useState(false);
-    return(
-         <div style={{...props.style}}>
-             <div style={{marginLeft:500}}>
-                 <img src={orangeCicles}/>
-             </div>
-             <h3 style={{textAlign:'center',
-                     fontSize:34,
-                     fontFamily:'Roboto serif'
-             }}>Let's start</h3>
-             <div style={{textAlign:'center'}}>
-                 <p>Fill out the form and we'll get in touch to get your trial set up.</p>
-             </div>
+    const [step, setStep] = useState(1);
 
-             <div style={{marginLeft:77, marginTop:85.5}}>
-                 <p style={{fontSize: 22,
-                 fontFamily:'Roboto'
-                 }}>Do you want to make ads that convert?</p>
-                 <div style={{flexDirection:"row", marginTop: 21,justifyContent:'space-between' , flex:1}}>
-                     <label style={{marginTop: 19}}>
-                         <input type="radio" value="yes"
-                         />
-                         Yes
-                     </label>
-                     <label>
-                         <input type="radio" value="no"/>
-                         No
-                     </label>
-                 </div>
-                 <p style={{marginTop: 47,
-                        fontSize:18,
-                        fontFamily:'Roboto'
-                 }}>What's your monthly ad budget?</p>
-                 <div style={{marginTop: 19}}>
-                     <select style={{height: 48, width:509, border: '1 solid #DEDEDE',
-                         borderRadius: 10}}>
-                         <option>Select</option>
-                     </select>
-                 </div>
-             </div>
-             <div style={{marginTop:101,display: "flex",
-                 flexDirection: 'row',
-                 justifyContent:'center',
-                 textAlign: 'center',
-                 alignItems:'center'}}>
-                 <button style={{marginBottom: 50,width: 521,
-                     height: 48,backgroundColor:'#FF6E4E', color:'white',
-                     boxShadow: '0 4 8 #00000029',
-                     borderRadius: 10
+    switch (step){
+        case 1: return <FormFirstStep style={props.style} onSubmit={()=>setStep(2)}/>
+        case 2: return <FormSecondStep style={props.style}/>
+    }
 
-                 }}>GET STARTED</button>
-             </div>
-         </div>
-    );
 }
 
 export default FormComponent;
