@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import orangeCicle from "../img/Repeat Grid 2.png";
 import FormFirstStep from "./FormFirstStep";
 import FormSecondStep from "./FormSecondStep";
 
