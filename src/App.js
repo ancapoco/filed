@@ -3,7 +3,7 @@ import logo from './img/filed-logo-01.png';
 import './index.css';
 import FormComponent from "./components/FormComponent";
 import group from './img/Group 392.png';
-import artboard from './img/Artboard 1.png';
+import artBoard from './img/Artboard 1.png';
 import twitter from './img/twitter.svg';
 import facebook from './img/facebook (1).svg';
 import instagram from './img/instagram.svg';
@@ -33,7 +33,7 @@ function App() {
                       <div style={{marginTop: "40"}}>
                           <p style={text2}>Because Our AI-Powered Software Will Exceed Your Marketing Goals.</p>
                           <div style={{marginTop:144}}>
-                              <img src={artboard} alt="Art board"/>
+                              <img src={artBoard} alt="Art board"/>
                           </div>
                       </div>
                   </div>
@@ -225,7 +225,7 @@ const logoStyle = {
     left: 174,
     width: 158,
     height: 54,
-    backgroundImage: './img/filed-logo-01.png'}
+    }
 
 const text1 = {
     fontSize: "44px",

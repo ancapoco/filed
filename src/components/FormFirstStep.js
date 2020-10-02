@@ -1,5 +1,4 @@
 import React from 'react';
-import orangeCicle from "../img/Repeat Grid 2.png";
 
 const FormFirstStep = (props) => {
 
